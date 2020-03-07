@@ -1,0 +1,40 @@
+.container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 30%;
+  text-align: center;
+  background-color: #232c39;
+  h2 {
+    font-size: 5rem;
+  }
+
+  .cafe-table{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 2.5%;
+    background-color: #000000;
+    $font-size: 1em;
+    color: #ffffff;
+
+
+    .name{
+      top: calc(50% - #{$font-size/2});
+      font-size: $font-size;
+      display: block;
+      position: relative;
+      margin: auto;
+    }
+    .total-bill{
+      display: block;
+      position: absolute;
+      bottom: 5px;
+      float: right;
+      right: 5px;
+      font-size: $font-size;
+    }
+  }
+}
